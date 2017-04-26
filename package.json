@@ -1,0 +1,16 @@
+{
+  "name": "st-study",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "suting",
+  "license": "ISC",
+  "dependencies": {
+    "angular": "^1.2.32",
+    "jquery": "^1.11.1",
+    "lodash": "^3.10.1"
+  }
+}
