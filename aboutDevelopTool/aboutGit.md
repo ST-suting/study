@@ -91,7 +91,24 @@
 
  - 提交时的冲突管理
     + 如果 git 不能自动合并分支 ，就会有冲突。此时需要手动解决冲突（删除不需要的代码），然后再次提交。
-
+ 
 ### 三、结合 github 使用（或其他服务器）
  
- #### 注册github账号
+#### 上传代码到 git 服务器（ push ）
+ - `git push https://github.com/ST-suting/study.git master` ，上传到自己的github。需要输入github的账号和密码
+
+ - `git push git@github.com:ST-suting/study.git`，ssh 方式上传代码
+    git 生成公钥和私钥：`ssh-keygen -t rsa`
+
+ - 如果不想每次都输入比较长的地址，可以采用变量的形式代替地址：
+    `git remote add [变量名] [远程服务器地址]`
+    `git remote add origin https://github.com/ST-suting/study.git master`
+    再次提交时：`git push origin master`
+
+#### 把代码 push 到服务器时需要先 pull 一下
+ - 从服务器 pull 代码到本地
+    + 如果本地没有 .git 目录，需要先初始化一个
+    + `git pull [远程服务器地址] [远程的分支]`
+    + `git pull https://github.com/ST-suting/study.git master`
+
+ - 在 pull 之后如果远程的代码与本地的代码有冲突，git 会先自动合并冲突，如果不能自动合并，就需要手动去处理冲突。
