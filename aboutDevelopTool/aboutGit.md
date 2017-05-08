@@ -112,3 +112,28 @@
     + `git pull https://github.com/ST-suting/study.git master`
 
  - 在 pull 之后如果远程的代码与本地的代码有冲突，git 会先自动合并冲突，如果不能自动合并，就需要手动去处理冲突。
+ 
+### Git免登录，不需重复输入账号和密码
+ - 命令行下：
+ ```
+ 在~/下， touch创建文件 .git-credentials：
+touch .git-credentials
+
+# 用vim编辑此文件，
+vim .git-credentials
+
+#输入内容格式
+https://username:password@github.com
+ ```
+ 
+ - 终端下：
+ ```
+ git config --global credential.helper store
+ ```
+ 
+ - 可以看到~/.gitconfig文件，会多了一项：
+```
+[credential]
+    helper = store
+ ```
+ 
