@@ -35,3 +35,5 @@
  - `npm cache` 指定 npm 下载包时的缓存，包括错误信息的保存
 
  - `npm update` 更新本地已安装的某个包
+ 
+ - `npm install npm@版本号 -g` 安装指定版本的 npm ，也可以用于回退到某个较低版本
