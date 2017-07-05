@@ -59,6 +59,11 @@
 
      + 先通过 npm 下载 nrm ，然后通过 nrm 切换下载地址
         命令：`nrm use taobao`
+        
+     + 使用nrm管理npm的registry
+       nrm li ==> 列出所有registry
+       nrm test ==> 测试所有registry的ping值
+       nrm registryName ==> 指定npm使用的registry
 
 
  - 如果有翻墙软件则会很方便
