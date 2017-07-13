@@ -10,14 +10,13 @@
 
    + `npm install --save-dev babel-preset-latest` 最新转码规则
    + `npm install --save-dev babel-preset-react` react转码规则
-   + `
-   npm install --save-dev babel-preset-stage-0
-   npm install --save-dev babel-preset-stage-1
-   npm install --save-dev babel-preset-stage-2
-   npm install --save-dev babel-preset-stage-3
-  `
+   + `npm install --save-dev babel-preset-stage-0`,
+   `npm install --save-dev babel-preset-stage-1`,
+   `npm install --save-dev babel-preset-stage-2`,
+   `npm install --save-dev babel-preset-stage-3`
    不同阶段语法提案的转码规则（共有4个阶段），选装一个
-   + `npm install --save-dev babel-preset-es2015`  ES2015转码规则
+   + `npm install --save-dev babel-preset-es2015`  ES2015转码规
+   
 - 在项目根目录下创建`.babelrc`文件进行配置()：
 `
 {
