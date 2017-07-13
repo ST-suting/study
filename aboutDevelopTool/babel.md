@@ -24,6 +24,7 @@
 - 需要注意的是，Iterator、Generator、Set、Maps、Proxy、Reflect、Symbol、Promise等全局对象，
 以及一些定义在全局对象上的方法（比如Object.assign）都不会转码。因此需要必须使用babel-polyfill，为当前环境提供一个垫片。
 `npm install --save babel-polyfill`
++ 下载完成后浏览器环境下只需要引入dist/babel-polyfill.js文件，开发环境下，在脚本文件头部引入该模块：`import 'babel-polyfill'`
 
 ### 结合webstorm自动转码
 - 完成以上操作后，可以使用命令行进行转码，但开发过程会比较麻烦，因此：
