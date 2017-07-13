@@ -6,10 +6,22 @@
 - 安装babel-cli:'npm install -g babel-cli',建议不要全局安装，不然会产生环境依赖
 
 ### 配置
-- 在项目根目录下创建`.babelrc`文件进行配置（至于为何要按如下情况配置请自行百度）：
+- 由于目前babel是6.0版本，各大转码模块需要根据自身需要进行下载
+  + `npm install --save-dev babel-preset-latest` 最新转码规则
+  + `npm install --save-dev babel-preset-react` react转码规则
+  + ```
+  npm install --save-dev babel-preset-stage-0
+ npm install --save-dev babel-preset-stage-1
+ npm install --save-dev babel-preset-stage-2
+ npm install --save-dev babel-preset-stage-3
+  ```
+  不同阶段语法提案的转码规则（共有4个阶段），选装一个
+  + `npm install --save-dev babel-preset-es2015`  ES2015转码规则
+- 在项目根目录下创建`.babelrc`文件进行配置()：
 `
 {
   "presets": [
+        "es2015"
         "latest",
         "react",
         "stage-2"
