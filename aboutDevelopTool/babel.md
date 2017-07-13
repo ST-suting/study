@@ -7,6 +7,7 @@
 
 ### 配置
 - 由于目前babel是6.0版本，各大转码模块需要根据自身需要进行下载
+
   + `npm install --save-dev babel-preset-latest` 最新转码规则
   + `npm install --save-dev babel-preset-react` react转码规则
   + `
