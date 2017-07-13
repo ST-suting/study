@@ -10,12 +10,12 @@
   + `npm install --save-dev babel-preset-latest` 最新转码规则
   + `npm install --save-dev babel-preset-react` react转码规则
   + 
-  
+  `
   npm install --save-dev babel-preset-stage-0
  npm install --save-dev babel-preset-stage-1
  npm install --save-dev babel-preset-stage-2
  npm install --save-dev babel-preset-stage-3
-  ```
+  `
   不同阶段语法提案的转码规则（共有4个阶段），选装一个
   + `npm install --save-dev babel-preset-es2015`  ES2015转码规则
 - 在项目根目录下创建`.babelrc`文件进行配置()：
@@ -29,7 +29,7 @@
         ],
   "plugins": []
 }
-```
+`
 
 ### 转码
 - 在根目录下打开命令行，输入：`babel es6.js -o es5.js` ，即可将es6文件转码成es5文件了
