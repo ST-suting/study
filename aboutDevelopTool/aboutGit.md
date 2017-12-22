@@ -77,6 +77,8 @@
  - git reset --hard 版本号
     + 通过每次提交时生成的版本号来指定回退版本
     + git reflog 查看被回退后的版本号
+    
+ - 把修改推送到远程服务器：git push -f -u origin master  
 
 #### 分支管理
  - git branch，查看当前所有分支
@@ -139,3 +141,5 @@ https://username:password@github.com
     helper = store
  ```
  
+### Git不启用ssl验证
+- git config --global http.sslVerify false
